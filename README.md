@@ -1,21 +1,21 @@
 # junction-fasta-maker
 Takes BED file of circRNA splice sites and creates a FASTA file of their junctions
 
-Transforms this:
+Transforms BED6 files like this:
 ```
-chrI 1 5 b 0 +
-```
-
-to this:
-```
->b::chrI:1-5(+)
-ccta
+chrI 1 15 circID 0 +
 ```
 
-to this automatically:
+to FASTA files like this:
 ```
->b::chrI:1-5(+)
-TAcc
+>circID::chrI:1-15(+)
+cctaagcctaagcc
+```
+
+to junction FASTA files like this automatically:
+```
+>circID::chrI:1-15(+)
+ctaagccCCTAAGC
 ```
 
 ### How to run
