@@ -19,12 +19,15 @@ ctaagccCCTAAGC
 ```
 
 ### How to run
+Run this command in your terminal:
 `sh primer_maker.sh test.bed ce11.fa`
 
 ### How to install
+Copy & paste these commands in your terminal:
 ```
 git clone https://github.com/alexandruioanvoda/junction-fasta-maker
 cd junction-fasta-maker
 chmod +x primer_maker.sh
 ```
-Dependencies: BEDtools, awk and tr.
+### Dependencies:
+BEDtools, awk and tr.
